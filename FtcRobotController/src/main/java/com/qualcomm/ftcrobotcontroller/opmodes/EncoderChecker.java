@@ -1,6 +1,7 @@
 package com.qualcomm.ftcrobotcontroller.opmodes;
 
 
+import com.qualcomm.robotcore.hardware.DcMotorController;
 
 public class EncoderChecker extends PacmanBotHWB2 {
     RunToPositionController controller;
@@ -8,6 +9,7 @@ public class EncoderChecker extends PacmanBotHWB2 {
     @Override
     public void init() {
         setupHardware();
+        basket.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
         basket.setPowerFloat();//set motor
     }
 
