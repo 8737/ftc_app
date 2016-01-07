@@ -22,22 +22,25 @@ public class AutoEncoderDriveTest extends PacmanBotHWB2 {
         }
         switch (autoDriveController.getStep()) {//steps :)
             case 0:
-                autoDriveController.encoderDrive(thing, thing, 0.5);
+                autoDriveController.encoderDrive(thing, thing, 1);
                 break;
             case 1:
-                autoDriveController.encoderDrive(0, thing, 0.5);
+                autoDriveController.encoderDrive(0, thing, 1);
                 break;
             case 2:
-                autoDriveController.encoderDrive(thing, thing, 0.5);
+                autoDriveController.encoderDrive(thing, thing, 1);
                 break;
             case 3:
-                autoDriveController.delay(2.0);
+                autoDriveController.delay(10.0);
                 break;
             case 4:
-                autoDriveController.encoderDrive(thing, 0, 0.5);
+                autoDriveController.encoderDrive(thing, 0, 1);
                 break;
             case 5:
-                autoDriveController.encoderDrive(-2*thing, -2*thing, 0.5);
+                autoDriveController.encoderDrive(-2*thing, -2*thing, 1);
+                break;
+            case 6:
+                autoDriveController.encoderDrive(-thing, thing, 1);
                 break;
             default:
         }
