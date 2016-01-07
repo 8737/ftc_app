@@ -56,7 +56,7 @@ public class PacmanBotHWB2 extends OpMode {
         /* Standard (non-mountain) drive. */
         driveRate = limit(driveRate, -1, 1);
         turnRate  = limit(turnRate, -1, 1);
-        driveRaw(driveRate+=turnRate,driveRate-turnRate);
+        driveRaw(driveRate+turnRate,driveRate-turnRate);
     }
     public void driveMtn(double driveRate,double turnRate) {
         driveRate = limit(driveRate, -1, 1);

@@ -63,6 +63,7 @@ public class FtcOpModeRegister implements OpModeRegister {
         manager.register("RedBeacon2", RedBeaconRoute2.class);
         manager.register("Encoder Test", EncoderTest.class);
         manager.register("Servo Test", ServoTest.class);
+        manager.register("RedBeaconRoute2", RedBeaconRoute2.class);
 //        manager.register("MatrixK9TeleOp", MatrixK9TeleOp.class);
 //        manager.register("K9TeleOp", K9TeleOp.class);
 //        manager.register("K9Line", K9Line.class);
